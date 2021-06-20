@@ -1,0 +1,117 @@
+.todoApp {
+  background-image: url('./images/link_page_home_image.jpg');
+  background-size: cover;
+  min-height: 100vh;
+}
+.todoText {
+ max-width: 340px;
+}
+.taskLeft{
+  padding: 8px 0;
+}
+
+.todoSection{
+  position: relative;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* font-size: 1.1rem; */
+  text-transform: uppercase;
+  /* font-weight: lighter; */
+  font-family: "Gill Sans", sans-serif;
+  background-color: rgba(248, 248, 248, 1);
+  padding: 6px 25px;
+  border-radius: 4px;
+  animation : listFade 1s linear;
+}
+@keyframes listFade{
+  0% {top: -10px; opacity: 0.2;}
+  50% {top:-5px; opacity :1}
+  100% {top: 0px; opacity :1}
+}
+
+.textField {
+  background-color: white;
+}
+
+.buttonArea{
+  margin: 10px 0;
+}
+
+.buttonPrimary {
+  padding: 8px 22px;
+  margin: 1px 6px;
+  border: none;
+  background-color: #7d2ae8;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttonSecondary {
+  padding: 8px 22px;
+  margin: 1px 6px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+}
+.buttonTertiary {
+  padding: 8px 22px;
+  margin: 1px 6px;
+  border: none;
+  background-color: #FFD700;
+  color: #111111;
+  border-radius: 4px;
+  width:150px
+}
+.hrLine{
+  margin:10px auto;
+  width: 70%;
+}
+
+/*====================
+    media queries 
+ ====================*/
+
+@media only screen and (max-width: 900px){
+
+  .todoSection{
+    padding: 8px;
+  }
+
+  .todoSection .todoText{
+  margin: 5px; 
+  }
+
+  /*===================
+   BUTTON MEDIA QUERY
+  ===================== */
+
+  .buttonPrimary {
+    padding: 8px 11px;
+    margin: 1px 4px;
+    border: none;
+    background-color: #7d2ae8;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .buttonSecondary {
+    padding: 8px 11px;
+    margin: 1px 4px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .buttonTertiary {
+    padding: 8px 11px;
+    margin: 1px 4px;
+    border: none;
+    background-color: #FFD700;
+    color: #111111;
+    border-radius: 4px;
+    width:150px
+  }
+}
