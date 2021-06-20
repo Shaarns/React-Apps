@@ -1,7 +1,8 @@
-import Todo from './components/todo-app/Todo'
+// import Todo from './components/todo-app/Todo'
+import Game from './components/tic-tac-toe-game/Game'
 
 function App() {
-  return <Todo />
+  return <Game />
 }
 
 export default App
